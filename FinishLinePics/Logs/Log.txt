@@ -1,2 +1,0 @@
-2015-06-14 14:38:40.5742|INFO|Default|Application Startup Completed|
-2015-06-14 14:42:54.8540|INFO|Default|Application Startup Completed|
