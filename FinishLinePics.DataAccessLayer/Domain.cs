@@ -3,10 +3,10 @@ using Highway.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using FinishLinePicsAPI.Configs;
+using FinishLinePics.DataAccessLayer.Configs;
 using Highway.Data.EventManagement.Interfaces;
 
-namespace FinishLinePicsAPI.Entities
+namespace FinishLinePics.DataAccessLayer
 {
     public class Domain : IDomain
     {

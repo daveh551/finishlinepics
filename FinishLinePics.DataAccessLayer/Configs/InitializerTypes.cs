@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Data.Entity;
 
-namespace FinishLinePics.Configs
+namespace FinishLinePics.DataAccessLayer.Configs
 {
     public enum InitializerTypes
     {

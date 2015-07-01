@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using Highway.Data;
-using FinishLinePics.Entities;
+using FinishLinePics.Models.Entities;
 
 namespace FinishLinePics.App_Architecture.Services.Data
 {

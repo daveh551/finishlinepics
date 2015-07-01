@@ -13,6 +13,7 @@ using FinishLinePicsAPI.App_Architecture.Activators;
 using FinishLinePicsAPI.App_Architecture.Services.Core;
 using System.Web;
 using System.Collections;
+using FinishLinePics.DataAccessLayer.Configs;
 
 [assembly: WebActivatorEx.PreApplicationStartMethod(
     typeof(WindsorActivator), 
@@ -50,6 +51,16 @@ namespace FinishLinePicsAPI.App_Architecture.Activators
                             (k, m, c) => daf.GetAdapter(m.Implementation, ConfigurationManager.AppSettings)
                             )
                     ));
+            IoC.Container.Register(
+                Types
+                    .FromAssemblyContaining(typeof(InitializerTypes))
+                    .Where(type => type.IsInterface && type.Name.EndsWith("Config"))
+                    .Configure(
+                        reg => reg.UsingFactoryMethod(
+                            (k, m, c) => daf.GetAdapter(m.Implementation, ConfigurationManager.AppSettings)
+                            )
+                      ));
+                    
 
             // Our session magic, register all interfaces ending in Session from
             // this assembly, and create implementations using DictionaryAdapter

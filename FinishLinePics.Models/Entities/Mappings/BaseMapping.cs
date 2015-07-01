@@ -6,9 +6,9 @@ using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Web;
 
-namespace FinishLinePicsAPI.Entities.Mappings
+namespace FinishLinePics.Models.Entities.Mappings
 {
-    public abstract class BaseMapping<T> : EntityTypeConfiguration<T> where T : BaseEntity
+    public abstract class BaseMapping<T> : EntityTypeConfiguration<T> where T : BaseGuidEntity
     {
         public BaseMapping()
         {

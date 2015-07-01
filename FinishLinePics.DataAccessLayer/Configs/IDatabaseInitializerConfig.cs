@@ -6,7 +6,7 @@ using System.Web;
 using System.Data.Entity;
 using Castle.Components.DictionaryAdapter;
 
-namespace FinishLinePicsAPI.Configs
+namespace FinishLinePics.DataAccessLayer.Configs
 {
     [KeyPrefix("EntityFramework.")]
     public interface IDatabaseInitializerConfig

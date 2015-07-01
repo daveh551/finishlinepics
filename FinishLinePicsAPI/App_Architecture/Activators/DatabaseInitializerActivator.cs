@@ -6,7 +6,8 @@ using System.Data.Entity;
 using FinishLinePicsAPI.App_Architecture.Activators;
 using FinishLinePicsAPI.App_Architecture.Services.Data;
 using Highway.Data;
-using FinishLinePicsAPI.Entities;
+using FinishLinePics.Models.Entities;
+using FinishLinePics.DataAccessLayer;
 
 [assembly: WebActivatorEx.PostApplicationStartMethod(
     typeof(DatabaseInitializerActivator), 

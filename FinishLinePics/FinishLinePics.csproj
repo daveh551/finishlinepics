@@ -301,17 +301,9 @@
     <Compile Include="BaseTypes\BaseApiController.cs" />
     <Compile Include="BaseTypes\BaseController.cs" />
     <Compile Include="BaseTypes\BaseRestApiController.cs" />
-    <Compile Include="Configs\IConnectionStringConfig.cs" />
-    <Compile Include="Configs\IDatabaseInitializerConfig.cs" />
-    <Compile Include="Configs\InitializerTypes.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Entities\BaseEntity.cs" />
-    <Compile Include="Entities\Domain.cs" />
-    <Compile Include="Entities\ExampleEntity.cs" />
-    <Compile Include="Entities\Mappings\BaseMapping.cs" />
-    <Compile Include="Entities\Mappings\ExampleEntityMapping.cs" />
     <Compile Include="Filters\ExceptionLoggingInjectableFilter.cs" />
     <Compile Include="Filters\IInjectableFilter.cs" />
     <Compile Include="Global.asax.cs">
@@ -341,7 +333,9 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config" />
     <Content Include="NLog.config" />
-    <Content Include="connectionStrings.config" />
+    <Content Include="connectionStrings.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -404,6 +398,16 @@
     <EmbeddedResource Include="Migrations\201506241451429_InitialIdentityOnAzure.resx">
       <DependentUpon>201506241451429_InitialIdentityOnAzure.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FinishLinePics.DataAccessLayer\FinishLinePics.DataAccessLayer.csproj">
+      <Project>{cca329ac-5b10-4972-b7c8-8a039028c63d}</Project>
+      <Name>FinishLinePics.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FinishLinePics.Models\FinishLinePics.Models.csproj">
+      <Project>{cbceb54f-e2ed-4c2b-b7e6-d80478d92278}</Project>
+      <Name>FinishLinePics.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
