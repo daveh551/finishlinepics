@@ -1,11 +1,10 @@
 using System;
 using System.Collections.Generic;
 
-namespace FinishLinePics.Models.Models
+namespace FinishLinePics.Models.Entities
 {
-    public partial class Distance
+    public partial class Distance : BaseIntEntity
     {
-        public int Id { get; set; }
         public string RaceDistance { get; set; }
     }
 }

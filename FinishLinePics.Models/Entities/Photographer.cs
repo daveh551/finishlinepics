@@ -1,16 +1,15 @@
 using System;
 using System.Collections.Generic;
 
-namespace FinishLinePics.Models.Models
+namespace FinishLinePics.Models.Entities
 {
-    public partial class Photographer
+    public partial class Photographer : BaseIntEntity
     {
         public Photographer()
         {
             this.Photos = new List<Photo>();
         }
 
-        public int Id { get; set; }
         public string Name { get; set; }
         public string Initials { get; set; }
         public string PhoneNumber { get; set; }

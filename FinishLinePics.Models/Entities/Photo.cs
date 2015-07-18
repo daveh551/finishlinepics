@@ -1,11 +1,10 @@
 using System;
 using System.Collections.Generic;
 
-namespace FinishLinePics.Models.Models
+namespace FinishLinePics.Models.Entities
 {
-    public partial class Photo
+    public partial class Photo : BaseGuidEntity
     {
-        public System.Guid Id { get; set; }
         public int EventId { get; set; }
         public string Station { get; set; }
         public string Card { get; set; }

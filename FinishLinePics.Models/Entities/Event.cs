@@ -1,16 +1,15 @@
 using System;
 using System.Collections.Generic;
 
-namespace FinishLinePics.Models.Models
+namespace FinishLinePics.Models.Entities
 {
-    public partial class Event
+    public partial class Event : BaseIntEntity
     {
         public Event()
         {
             this.Photos = new List<Photo>();
         }
 
-        public int Id { get; set; }
         public string EventName { get; set; }
         public Nullable<System.DateTime> RaceDate { get; set; }
         public string Location { get; set; }

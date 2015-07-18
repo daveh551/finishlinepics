@@ -81,21 +81,22 @@
     <Compile Include="Entities\ExampleEntity.cs" />
     <Compile Include="Entities\Mappings\BaseMapping.cs" />
     <Compile Include="Entities\Mappings\ExampleEntityMapping.cs" />
-    <Compile Include="Models\Distance.cs" />
-    <Compile Include="Models\Event.cs" />
-    <Compile Include="Models\Mapping\DistanceMap.cs" />
-    <Compile Include="Models\Mapping\EventMap.cs" />
-    <Compile Include="Models\Mapping\PhotographerMap.cs" />
-    <Compile Include="Models\Mapping\PhotoMap.cs" />
-    <Compile Include="Models\Photo.cs" />
-    <Compile Include="Models\photodataContext.cs" />
-    <Compile Include="Models\Photographer.cs" />
+    <Compile Include="Entities\Distance.cs" />
+    <Compile Include="Entities\Event.cs" />
+    <Compile Include="Entities\Mappings\DistanceMap.cs" />
+    <Compile Include="Entities\Mappings\EventMap.cs" />
+    <Compile Include="Entities\Mappings\PhotographerMap.cs" />
+    <Compile Include="Entities\Mappings\PhotoMap.cs" />
+    <Compile Include="Entities\Photo.cs" />
+    <Compile Include="photodataContext.cs" />
+    <Compile Include="Entities\Photographer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

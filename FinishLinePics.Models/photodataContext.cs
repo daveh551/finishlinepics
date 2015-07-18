@@ -1,8 +1,9 @@
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
-using FinishLinePics.Models.Models.Mapping;
+using FinishLinePics.Models.Entities.Mapping;
+using FinishLinePics.Models.Entities;
 
-namespace FinishLinePics.Models.Models
+namespace FinishLinePics.Models
 {
     public partial class photodataContext : DbContext
     {

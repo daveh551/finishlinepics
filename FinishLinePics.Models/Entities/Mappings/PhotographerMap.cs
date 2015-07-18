@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
 
-namespace FinishLinePics.Models.Models.Mapping
+namespace FinishLinePics.Models.Entities.Mapping
 {
     public class PhotographerMap : EntityTypeConfiguration<Photographer>
     {
